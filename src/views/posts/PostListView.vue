@@ -28,12 +28,12 @@
 			</div>
 			<nav class="mt-5" aria-label="Page navigation example">
 				<ul class="pagination justify-content-center">
-					<li class="page-item" :class="{ disabled: params._page < 1 }">
+					<li class="page-item" :class="{ disabled: params._page <= 1 }">
 						<a
 							class="page-link"
 							href="#"
 							aria-label="Previous"
-							@click.prevent="++params._page"
+							@click.prevent="--params._page"
 						>
 							<span aria-hidden="true">&laquo;</span>
 						</a>
@@ -51,7 +51,10 @@
 							>{{ page }}</a
 						>
 					</li>
-					<li class="page-item" :class="{ disabled: params._page > pageCount }">
+					<li
+						class="page-item"
+						:class="{ disabled: params._page >= pageCount }"
+					>
 						<a
 							class="page-link"
 							href="#"
