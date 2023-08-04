@@ -6,7 +6,7 @@
 		<div v-if="$slots.default" class="card-body">
 			<slot></slot>
 		</div>
-		<div class="card-footer">
+		<div v-if="$slots.footer" class="card-footer">
 			<slot name="footer"></slot>
 		</div>
 	</div>
