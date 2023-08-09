@@ -1,82 +1,22 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "제목1",
-      "content": "내용1",
-      "createdAt": "2020-01-01"
+      "title": "test33...",
+      "content": "test333",
+      "createdAt": "2023-08-09",
+      "id": 14
     },
     {
-      "id": 2,
-      "title": "제목2",
-      "content": "내용2",
-      "createdAt": "2020-01-02"
+      "title": "test44",
+      "content": "444",
+      "createdAt": "2023-08-09",
+      "id": 15
     },
     {
-      "id": 3,
-      "title": "제목3",
-      "content": "내용3",
-      "createdAt": "2020-01-03"
-    },
-    {
-      "id": 4,
-      "title": "제목4",
-      "content": "내용4",
-      "createdAt": "2020-01-04"
-    },
-    {
-      "id": 5,
-      "title": "제목5",
-      "content": "내용5",
-      "createdAt": "2020-01-05"
-    },
-    {
-      "id": 6,
-      "title": "제목6",
-      "content": "내용6",
-      "createdAt": "2020-01-06"
-    },
-    {
-      "id": 7,
-      "title": "제목7",
-      "content": "내용7",
-      "createdAt": "2020-01-07"
-    },
-    {
-      "id": 8,
-      "title": "제목8",
-      "content": "내용8",
-      "createdAt": "2020-01-08"
-    },
-    {
-      "id": 9,
-      "title": "제목9",
-      "content": "내용9",
-      "createdAt": "2020-01-09"
-    },
-    {
-      "title": "데이터 입니다",
-      "content": "??",
-      "createdAt": 1691053581926,
-      "id": 10
-    },
-    {
-      "title": "테스트3",
-      "content": "안녕하십니까?",
-      "createdAt": "2023-08-03",
-      "id": 11
-    },
-    {
-      "title": "테스트2222",
-      "content": "22",
-      "createdAt": "2023-08-04",
-      "id": 12
-    },
-    {
-      "title": "test3",
-      "content": "안녕하세요@#$%!",
-      "createdAt": "2023-08-04",
-      "id": 13
+      "title": "test555",
+      "content": "test555",
+      "createdAt": "2023-08-09",
+      "id": 16
     }
   ]
 }

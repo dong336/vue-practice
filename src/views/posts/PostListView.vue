@@ -70,7 +70,7 @@
 	</div>
 	<hr class="my-5" />
 	<AppCard>
-		<PostDetailView :id="2"></PostDetailView>
+		<PostDetailView></PostDetailView>
 	</AppCard>
 </template>
 
