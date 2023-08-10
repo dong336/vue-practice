@@ -40,7 +40,7 @@ npm run lint
 npm run db
 ```
 
-### VScode extansion 설치 (권장)
+### VScode extension 설치 (권장)
 
 ```sh
 ESLint
