@@ -50,3 +50,27 @@ Live Server, Prettier
 Vue Language Features (Volar)
 Vue VSCode Snippets
 ```
+
+### VScode ESLint 설정하기
+
+- vscode에서 'Ctrl' + ',' 눌러서 탭을 띄웁니다.
+- 탭에서 '확장>ESLint>settings.json' 을 클릭
+- settings.json에 아래 항목을 추가하고 npm run lint를 실행합니다
+
+```json
+    "eslint.validate": [
+
+
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.tabSize": 2,
+```
