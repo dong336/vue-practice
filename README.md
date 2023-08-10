@@ -17,13 +17,13 @@ npm install
 ```
 
 ### Compile and Hot-Reload for Development
-
+프론트 개발 서버 실행 명령
 ```sh
 npm run dev
 ```
 
 ### Compile and Minify for Production
-
+운영 파일 빌드 명령
 ```sh
 npm run build
 ```
@@ -35,13 +35,12 @@ npm run lint
 ```
 
 ### Test db server load
-
+mock api 를 위한 서버 실행 명령
 ```sh
 npm run db
 ```
 
-### VScode extension 설치 (권장)
-
+### VScode extension 설치
 ```sh
 ESLint
 HTML CSS Support
