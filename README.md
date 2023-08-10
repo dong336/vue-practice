@@ -39,3 +39,14 @@ npm run lint
 ```sh
 npm run db
 ```
+
+### VScode extansion 설치 (권장)
+
+```sh
+ESLint
+HTML CSS Support
+HTML to CSS autocompletion
+Live Server, Prettier
+Vue Language Features (Volar)
+Vue VSCode Snippets
+```
