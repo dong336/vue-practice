@@ -11,7 +11,7 @@ This template should help get you started developing with Vue 3 in Vite.
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
-
+package.json 정보 로드(gradle, maven 업데이트와 유사)
 ```sh
 npm install
 ```
@@ -29,7 +29,7 @@ npm run build
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
-
+ESLint 변경시 실행 필요
 ```sh
 npm run lint
 ```
