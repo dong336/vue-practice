@@ -33,3 +33,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Test db server load
+
+```sh
+npm run db
+```
