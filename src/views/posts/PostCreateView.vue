@@ -19,7 +19,7 @@
 import { createPost } from '@/api/posts';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import PostForm from './PostForm.vue';
+import PostForm from '@/components/posts/PostForm.vue';
 
 const router = useRouter();
 const goListPage = () => router.push({ name: 'PostList' });
