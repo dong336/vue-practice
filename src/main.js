@@ -4,8 +4,18 @@ import 'bootstrap/dist/js/bootstrap.js';
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
+import funcPlugins from './plugins/func';
+import objPlugins from './plugins/obj';
+import person from './plugins/person';
 
-createApp(App).use(router).mount('#app');
+const app = createApp(App);
+
+app
+	.use(funcPlugins)
+	.use(objPlugins, { name: 'kdw' })
+	.use(person, { name: '홍길동' })
+	.use(router)
+	.mount('#app');
 
 console.log('mode: ', import.meta.env.MODE);
 // console.log('base_url: ', import.meta.env.BASE_URL);

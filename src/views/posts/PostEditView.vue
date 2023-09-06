@@ -18,7 +18,8 @@
 				<button type="submit" class="btn btn-primary">수정</button>
 			</template>
 		</PostForm>
-		<AppAlert :show="showAlert" :message="alertMessage" :type="alertType" />
+		<!-- <AppAlert :show="showAlert" :message="alertMessage" :type="alertType" /> -->
+		<AppAlert :items="alerts" />
 	</div>
 </template>
 
@@ -44,13 +45,13 @@ const fetchPost = async () => {
 		// post.value = { ...data }; 모든 속성을 할당하지 말자
 	} catch (error) {
 		console.log(error);
-		vAlert('네트워크 오류');
+		vAlert(error.message);
 	}
 };
-const setForm = ({ title, content, createdAt }) => {
+const setForm = ({ title, content }) => {
 	form.value.title = title;
 	form.value.content = content;
-	form.value.createdAt = createdAt;
+	// form.value.createdAt = createdAt;
 };
 
 const goDetailPage = () => router.push({ name: 'PostDetail', params: { id } });
@@ -58,27 +59,22 @@ const goDetailPage = () => router.push({ name: 'PostDetail', params: { id } });
 const edit = async () => {
 	try {
 		await updatePost(id, { ...form.value });
-		//router.push({ name: 'PostDetail', params: { id } });
 		vAlert('수정이 완료되었습니다.', 'success');
+		// router.push({ name: 'PostDetail', params: { id } });
 	} catch (error) {
 		console.error(error);
+		vAlert(error.message);
 	}
 };
-
-const showAlert = ref(false);
-const alertMessage = ref('');
-const alertType = ref('');
+fetchPost();
+const alerts = ref([]);
 
 const vAlert = (message, type = 'error') => {
-	showAlert.value = true;
-	alertMessage.value = message;
-	alertType.value = type;
+	alerts.value.push({ message, type });
 	setTimeout(() => {
-		showAlert.value = false;
+		alerts.value.shift();
 	}, 2000);
 };
-
-fetchPost();
 </script>
 
 <style lang="scss" scoped></style>

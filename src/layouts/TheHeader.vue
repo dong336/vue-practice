@@ -17,7 +17,10 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<RouterLink class="nav-link" active-class="active" to="/"
+							<RouterLink
+								class="nav-link"
+								active-class="active"
+								to="/posts/create"
 								>Home</RouterLink
 							>
 						</li>
